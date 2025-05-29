@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A special birthday website for my love" />
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="c"></canvas>
+  <div id="balloon-container"></div>
+  <div id="compliment-container"></div>
+  <div class="surprise-container">
+    <a href="surprise/READ ME ASAP.docx" class="surprise-btn" target="_blank" onclick="triggerConfetti()">Click Me for a Surprise! 🎀</a>
+  </div>
+  <p class="gift-links">
+    <a href="#" class="gift-link" onclick="document.getElementById('message').style.display='Backdrop.png'">Happy Birthday, Grandma. It's better to be over the hill than buried under it!</a>
+    <span><a href="#" onclick="document.getElementById('message').style.display='Backdrop.png'">Click the Surprise button above ehh</a></span>
+  </p>
+  <section id="message" class="modal">
+    <div class="modal-content">
+      <h2>My Love,</h2>
+      <p>Your smile lights up my world, and your birthday is the perfect day to celebrate you. Happy Birthday, Gorgeous! 💗</p>
+      <button onclick="document.getElementById('message').style.display='none'">Close</button>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
